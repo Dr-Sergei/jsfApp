@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>#{msgs.title}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</h:head>
+
+<h:body>
+    <div class="container">
+        <div class="header">
+            <h2>#{msgs.heading}</h2>
+        </div>
+        <h:form class="form" prependId="false">
+
+            <p>
+                <h:outputFormat value="#{msgs.currentScore}" class="input">
+                    <f:param value="#{quizBean.score}"/>
+                </h:outputFormat>
+            </p>
+            <p>#{msgs.guessNext}</p>
+            <p>#{quizBean.current.sequence}</p>
+            <p>
+                #{msgs.answer}
+                <h:inputText value="#{quizBean.answer}"/>
+            </p>
+            <p>
+                <h:commandButton value="#{msgs.next}" class="button"/>
+            </p>
+        </h:form>
+    </div>
+</h:body>
+</html>

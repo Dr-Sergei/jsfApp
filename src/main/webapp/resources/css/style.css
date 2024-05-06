@@ -1,0 +1,74 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:40px;
+}
+
+/* Container styles */
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.header h2 {
+    font-size: 24px;
+    color: #333;
+    text-shadow: 5px 5px 5px 1px gray;
+}
+
+/* Form styles */
+.form {
+    margin-bottom: 20px;
+}
+
+.form .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button {
+    background-color: #ff9900;
+    color: #fff;
+    cursor: pointer;
+    min-width:6rem;
+    min-height:2rem;
+    box-shadow: 3px 3px 3px 1px gray;
+    border:none;
+    border-radius:4px;
+}
+
+.button:hover {
+    background-color: #e68a00;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}

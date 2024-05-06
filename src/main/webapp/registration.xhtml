@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Regitration!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./resources/css/style.css"/>
+</h:head>
+<h:body>
+    <div class="container">
+        <div class="header">
+            <h2>Registration!</h2>
+        </div>
+        <h:form class="form" prependId="false">
+            <table>
+                <tr>
+                    <td>Sozdajte Имя пользователя:</td>
+                    <td>
+                        <h:inputText value="#{user.name}" class="input" id="name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>sozdajte Пароль:</td>
+                    <td>
+                        <h:inputSecret value="#{user.password}" class="input" id="password"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>wwedite email:</td>
+                    <td>
+                        <h:inputText value="#{user.email}" class="input" id="email"/>
+                    </td>
+                </tr>
+            </table>
+            <p><h:commandButton value="register" action="#{user.register}" class="button"/></p>
+        </h:form>
+    </div>
+</h:body>
+</html>
